@@ -12,7 +12,7 @@ if (isRaining) {
   console.log("Enjoy your day!");
 }
 
-var time = 1;
+var time = new Date().getHours();
 if (time >= 6 && time <= 12) {
   console.log("Good morning!");
 } else if (time > 12 && time <= 18) {
@@ -22,3 +22,4 @@ if (time >= 6 && time <= 12) {
 } else {
   console.log("Good night!");
 }
+console.log(time);
